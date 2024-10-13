@@ -36,9 +36,9 @@ export default class ShutterAccessory {
 
   public readonly accessory: PlatformAccessory;
 
-  private currentPosition = 0;
+  private currentPosition = this.currentPosition;
 
-  private targetPosition = 0;
+  private targetPosition = this.targetPosition;
 
   private readonly deviceId: string;
 
