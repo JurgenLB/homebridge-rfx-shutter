@@ -1,6 +1,6 @@
 {
   "name": "homebridge-rfx-shutter",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "main": "src/index.ts",
   "homepage": "https://github.com/JurgenLB/homebridge-rfx-shutter",
   "repository": "git@github.com:JurgenLB/homebridge-rfx-shutter.git",
@@ -16,6 +16,7 @@
     "homebridge": "^1.8.5 || ^2.0.0-beta.0"
   },
   "scripts": {
+    "prepare": "npm run build",
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc",
