@@ -1,16 +1,108 @@
 {
-  "name": "RFXShutterDynamicPlatform",
-    "tty": "/dev/ttyUSB0",
-    "openSeconds": 20,
-    "closeSeconds": 20,
-    "excludedDeviceIds": [
-        "0xxx",
-        "0xxx"
-    ],
-    "direction": "normal",
-    "_bridge": {
-        "username": "xx:xx:xx:xx:xx:xx",
-        "port": xxxxx
+    "pluginAlias": "Homebridge-RFX-shutter",
+    "pluginType": "platform",
+    "singular": true,
+    "headerDisplay": "",
+    "footerDisplay": "",
+    "customUi": false,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string",
+                "title": "Name",
+                "required": true,
+                "default": "Homebridge-RFX-Shutter-Platform"
+            },
+            "options": {
+                "title": "RFX settings",
+                "type": "object",
+                "required": true,
+                "properties": {
+                    "platform": {
+                        "title": "RFXShutter Dynamic Platform Type",
+                        "type": "string",
+                        "default": "RFXShutterDynamicPlatform",
+                        "required": true
+                    },
+                    "tty": {
+                        "title": "tty serial port",
+                        "type": "string",
+                        "default": "/dev/ttyUSB0",
+                        "required": true
+                    },
+                    "closeSeconds": {
+                        "title": "Close Seconds",
+                        "type": "integer",
+                        "default": 20,
+                        "required": true
+                    },
+                    "openSeconds": {
+                        "title": "Open Seconds",
+                        "type": "integer",
+                        "default": 20,
+                        "required": true
+                    },
+                    "excludedDeviceIds": {
+                        "title": "Blacklisted Device IDs",
+                        "description": "An optional list that can be used as an option to remove any shutter or 'shutter group' to the platform.",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "direction": {
+                        "title": "Direction Blinds",
+                        "description": "option is here to support blinds that use the opposite direction.",
+                        "type": "string",
+                        "default": "normal"
+                    }
+                }
+            }
+        }
     },
-    "platform": "RFXShutterDynamicPlatform"
+    "layout": [
+        {
+            "type": "fieldset",
+            "title": "RFX Shutter Platform Info",
+            "expandable": true,
+            "expanded": true,
+            "items": [
+                {
+                    "type": "section",
+                    "title": "Platform Settings",
+                    "items": [
+                        "name",
+                        "options.deviceID",
+                        "options.tty",
+                        "options.deviceID",
+                        "options.openSeconds",
+                        "options.closeSeconds",
+                        "options.direction"
+                    ]
+                },
+                {
+                    "type": "fieldset",
+                    "title": "Excluded Devices",
+                    "expandable": true,
+                    "expanded": false,
+                    "notitle": false,
+                    "items": [
+                        {
+                            "type": "array",
+                            "key": "options.excludedDeviceIds",
+                            "title": "Blacklisted Device IDs",
+                            "description": "An optional list that can be used as an option to remove any shutter or 'shutter group' to the platform.",
+                            "items": [
+                                {
+                                    "type": "string",
+                                    "title": "Device ID"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
