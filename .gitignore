@@ -8,7 +8,7 @@ node_modules
 .eslintcache
 
 # Build outputs
-dist
+
 
 # Jest outputs
 coverage
