@@ -59,7 +59,7 @@ export default class ShutterAccessory {
     this.hap = api.hap;
     this.accessory = accessory;
     this.serial = accessory.context.deviceId; // SerialNumber:
-    https://github.com/JurgenLB/homebridge-rfx-shutter/edit/master/src/accessory/ShutterAccessory.ts
+    
     this.config = {
       openSeconds: config.openSeconds || DEFAULT_OPEN_SECONDS,
       closeSeconds: config.closeSeconds || DEFAULT_CLOSE_SECONDS,
