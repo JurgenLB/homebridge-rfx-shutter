@@ -7,6 +7,6 @@ import RFXShutterDynamicPlatform, {
 /*
  * Initializer function called when the plugin is loaded.
  */
-export = (api: API): void => {
+export default (api: API): void => {
   api.registerPlatform(PLATFORM_NAME, RFXShutterDynamicPlatform);
 };
