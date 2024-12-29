@@ -1,6 +1,6 @@
 # homebridge-rfx-shutter
 
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/howm/homebridge-rfx-shutter)](https://www.npmjs.com/package/homebridge-rfx-shutter)
+[![GitHub package.json version]2.2.0]
 
 [![Release](https://github.com/JurgenLB/homebridge-rfx-shutter/actions/workflows/release.yml/badge.svg)](https://github.com/JurgenLB/homebridge-rfx-shutter/actions/workflows/release.yml)
 [![GH CI Action](https://github.com/JurgenLB/homebridge-rfx-shutter/workflows/CI/badge.svg)](https://github.com/JurgenLB/homebridge-rfx-shutter/actions?query=workflow:CI)
