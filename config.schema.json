@@ -2,12 +2,13 @@
     "pluginAlias": "Homebridge-RFX-shutter",
     "pluginType": "platform",
     "singular": true,
-    "headerDisplay": "",
+    "headerDisplay": "Homebridge plugin for RFXcom 433 Mhz Shutters",
     "footerDisplay": "",
     "customUi": false,
     "schema": {
         "type": "object",
         "properties": {
+            "platform": {},
             "name": {
                 "type": "string",
                 "title": "Name",
