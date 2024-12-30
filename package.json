@@ -1,6 +1,7 @@
 {
   "name": "homebridge-rfx-shutter",
   "version": "2.2.0",
+  "type": "module",
   "main": "src/index.ts",
   "homepage": "https://github.com/JurgenLB/homebridge-rfx-shutter",
   "repository": "git@github.com:JurgenLB/homebridge-rfx-shutter.git",
