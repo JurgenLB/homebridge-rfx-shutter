@@ -1,4 +1,4 @@
-import { PLATFORM_NAME } from './platform/RFXShutterDynamicPlatform';
+const { PLATFORM_NAME } = require('./platform/RFXShutterDynamicPlatform');
 
 const { API } = require('homebridge');
 
