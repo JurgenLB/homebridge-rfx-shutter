@@ -1,6 +1,8 @@
+import { PLATFORM_NAME } from './platform/RFXShutterDynamicPlatform';
+
 const { API } = require('homebridge');
 const RFXShutterDynamicPlatform = require('./platform/RFXShutterDynamicPlatform');
-import { PLATFORM_NAME } from './platform/RFXShutterDynamicPlatform';
+
 /*
  * Initializer function called when the plugin is loaded.
  */
