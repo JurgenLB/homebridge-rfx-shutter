@@ -1,6 +1,7 @@
-const { PLATFORM_NAME } = require('./platform/RFXShutterDynamicPlatform');
 
 const { API } = require('homebridge');
+
+const { PLATFORM_NAME } = require('./platform/RFXShutterDynamicPlatform');
 
 const RFXShutterDynamicPlatform = require('./platform/RFXShutterDynamicPlatform');
 
