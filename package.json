@@ -44,12 +44,11 @@
     }
   },
   "peerDependencies": {
-    "homebridge": "1.9.0"
+    "homebridge": "^1.10.0 || ^2.0.0",
+    "tslib": "^2.8.1"
   },
   "dependencies": {
-    "homebridge": "^1.10.0 || ^2.0.0",
     "rfxcom": "^2.6.2",
-    "waait": "^1.0.5",
-    "tslib": "^2.8.1"
+    "waait": "^1.0.5"
   }
 }
