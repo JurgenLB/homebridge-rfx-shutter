@@ -1,7 +1,7 @@
 {
   "extends": "@boilerz/tsconfig-production",
   "compilerOptions": {
-    "module": "Node20",
+    "module": "ESNext",
     "moduleResolution": "nodenext",
     "importHelpers": false,
     "lib": ["es2018"],
